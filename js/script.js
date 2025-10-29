@@ -65,4 +65,9 @@ function displayResult() {
       break;
     default:
       message = "Please finish all the questions!";
-  };
+  }
+
+   resultText.textContent = message;
+  resultContainer.style.display = "block";
+}
+showResultBtn.addEventListener('click', displayResult);
